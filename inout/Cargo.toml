@@ -13,7 +13,8 @@ readme = "README.md"
 
 [dependencies]
 block-padding = { version = "0.4.0-rc.3", path = "../block-padding", optional = true }
-hybrid-array = "0.3"
+# hybrid-array = "0.3"
+hybrid-array = { version = "0.3", path = "../../../RustCrypto/hybrid-array" }
 
 [package.metadata.docs.rs]
 all-features = true
