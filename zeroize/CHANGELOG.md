@@ -5,10 +5,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## 1.9.0 (unreleased)
+### Added
+- `optimization_barrier` function ([#1261])
+
 ### Changed
 - Edition changed to 2024 and MSRV bumped to 1.85 ([#1149])
 
 [#1149]: https://github.com/RustCrypto/utils/pull/1149
+[#1261]: https://github.com/RustCrypto/utils/pull/1261
+
+## 1.8.2 (2025-09-29)
+### Changed
+- Switch from `doc_auto_cfg` to `doc_cfg` ([#1228])
+
+[#1228]: https://github.com/RustCrypto/utils/pull/1228
 
 ## 1.8.1 (2024-05-25)
 ### Changed
@@ -94,7 +104,7 @@ NOTE: yanked because [#900] bumped MSRV to 1.60, which vioates our MSRV policy.
 
 ## 1.5.4 (2022-03-16)
 ### Added
-- Nightly-only upport for zeroizing ARM64 SIMD registers ([#749])
+- Nightly-only support for zeroizing ARM64 SIMD registers ([#749])
 
 [#749]: https://github.com/RustCrypto/utils/pull/749
 
@@ -220,7 +230,7 @@ are deriving `Zeroize`.
 - Bound blanket array impls on `Zeroize` instead of `DefaultIsZeroes`
 - Require `zeroize(drop)` or `zeroize(no_drop)` attributes when deriving
   `Zeroize` .
-- Support stablized 'alloc' crate
+- Support stabilized 'alloc' crate
 
 ## 0.8.0 (2019-05-20)
 - Impl `Drop` by default when deriving `Zeroize`

@@ -4,7 +4,7 @@
     html_logo_url = "https://raw.githubusercontent.com/RustCrypto/media/6ee8e381/logo.svg",
     html_favicon_url = "https://raw.githubusercontent.com/RustCrypto/media/6ee8e381/logo.svg"
 )]
-#![cfg_attr(docsrs, feature(doc_auto_cfg))]
+#![cfg_attr(docsrs, feature(doc_cfg))]
 #![deny(unsafe_code)]
 
 #[cfg(feature = "alloc")]
@@ -13,7 +13,7 @@ extern crate alloc;
 pub(crate) mod decode;
 #[cfg(feature = "alloc")]
 pub use decode::parse_into_vec;
-pub use decode::{parse_dedup_len, parse_into_array, parse_items_len};
+pub use decode::{Header, parse_into_array};
 
 #[cfg(feature = "alloc")]
 mod encode;

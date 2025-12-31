@@ -4,11 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## UNRELEASED
+## 0.11.0 (2025-11-07)
 ### Added
 - `ReadBuffer` type ([#823])
-- `serialize` and `deserialize` methods ([#823])
 - Optional implementation of the `Zeroize` trait ([#963])
+- Generic `serialize` and `deserialize` methods ([#1200])
+- `ReadBuffer::{read_cached, write_block, reset}` methods ([#1201])
 
 ### Changed
 - Block sizes must be bigger than 0 and smaller than 256.
@@ -25,6 +26,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [#1115]: https://github.com/RustCrypto/utils/pull/1115
 [#1115]: https://github.com/RustCrypto/utils/pull/1116
 [#1149]: https://github.com/RustCrypto/utils/pull/1149
+[#1200]: https://github.com/RustCrypto/utils/pull/1200
+[#1201]: https://github.com/RustCrypto/utils/pull/1201
 
 ## 0.10.3 (2022-09-04)
 ### Added
